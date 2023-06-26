@@ -9,7 +9,14 @@ html, body{
     position: relative;
     font-family: 'Segoe UI','Segoe UI Emoji','Segoe UI Symbol','Lato','Liberation Sans','Noto Sans','Helvetica Neue','Helvetica',sans-serif
 }
+hr{
+    margin: 0;
+    position: relative;
+    top: -1%;
+}
+
 .header{
+    z-index: 2;
     background-color: rgb(34, 33, 37);
     width: 100%;
     height: 50px;
@@ -165,11 +172,10 @@ html, body{
 .mainblock-links a{
     text-decoration: none;
     color: #007FFF;
-    height: 3em;
-    line-height: 1.25em;
     font-weight: 100;
     font-size: 1.25em;
     font-variant: small-caps;
+    line-height: 1.3em;
 }
 .mainblock-links a:hover{
     border-bottom: 3px solid white;
@@ -193,12 +199,49 @@ html, body{
     font-weight: 100;
     font-size: 1.25em;
     font-variant: small-caps;
+    overflow: hidden;
 }
 .manuals-button a:hover{
     border-bottom: 3px solid white;
     box-shadow: 0px 3px 0px black, 0px 5px 0px darkred;
     color: white;
-    top: 0%;
+}
+.manuals{
+    font-family: Oswald;
+    text-shadow: 3px 3px 0px black, 5px 5px 0px darkred;
+    font-variant: small-caps;
+    text-align: center;
+    display: flex; 
+    align-items: baseline;
+    flex-flow: row wrap; 
+    justify-content: center; 
+    column-gap: 5em; 
+    width: 100%;
+}
+.manuals a{
+    font-size: 2.5em;
+    color: #007FFF;
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+}
+.manuals a:hover{
+    border-bottom: 3px solid white;
+    box-shadow: 0px 3px 0px black, 0px 5px 0px darkred;
+    color: white;
+    height: 1.4em;
+}
+.manuals a:last-child{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+}
+.leftmenu{
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    display: block;
+    top: 4.25%;
+    margin-left: 10%;
 }
 
 .footer{
