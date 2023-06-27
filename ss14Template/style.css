@@ -123,6 +123,7 @@ img{
     vertical-align: center;
     color: white;
     font-family: 'Times New Roman', Times, serif;
+    width: 99%;
 }
 .mainblock-buttons{
     font-size: 1.25em;
@@ -239,13 +240,16 @@ img{
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
+.manuals a:last-child:hover{
+    height: 1.1em;
+}
+
 .leftmenu{
     z-index: 1;
     position: absolute;
-    /* top: 4.25%; */
     margin: 5em;
     margin-left: 5em;
-    width: 12.5%;
+    width: 12%;
 }
 .leftmenu-logoimg img{
     height: 135px;
@@ -263,8 +267,13 @@ img{
 .lm-links{
     margin: 1em;    
     padding: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     background: #212126;
     font-size: 0.9em;
+}
+.lm-links:last-child{
+    padding-bottom: 2em;
 }
 .lm-links a{
     color: #007FFF;
@@ -273,10 +282,45 @@ img{
     margin: -0.65em;
     margin-left: 0;
 }
+.lm-links a:hover{
+    text-decoration: underline;
+    color: white;
+}
+.right-menu{
+    background: #212126;
+    position: absolute;
+    z-index: 1;
+    /* top: 4.25%; */
+    left: 85%;
+    top: 5%;
+    width: 10%;
+    height: 13%;
+    font-size: 0.9em;
+    padding: 1em;
+}
+.right-menu a{
+    color: #007FFF;
+    text-decoration: none;
+    display: block;
+    margin: -0.65em;
+    margin-left: 0.6em;
+}
+.right-menu a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.rm-more{
+    width: 90%;
+    border-bottom: 2px solid #ddd;
+    margin: 0.5em;
+    margin-bottom: 1em;
+    color: #ddd;
+}
 
 .footer{
     border-top: 1px solid white;
     width: 100%;
+    position: relative;
     flex-shrink: 0;
 }
 .footer-line{
@@ -293,4 +337,12 @@ img{
 }
 .links a{
     padding-right: 1em
+}
+.rightimg-links{
+    position: absolute;
+    left: 85%;
+    top: 10%;
+}
+.rightimg-links img{
+    margin-right: 1em;
 }
