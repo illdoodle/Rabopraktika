@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Station 14 RU Wiki</title>
-    <script href="script.js"></script>
+    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/icon.png">
 </head>
@@ -19,7 +19,17 @@
                 <input type="text" name="search" id="main-search" placeholder="Искать в Space Station 14 RU Wiki">
             </div>
             <div class="auth">
-                <a href="" id="auth_button">Войти</a>
+                <span href="" id="user-mainpage-name">Аноним</span>
+            </div>
+            <div class="auth-window" hidden>
+                <div class="aw-container">
+                    <div class="aw-text">
+                        <span>Вы не представились системе</span>
+                    </div>
+                    <div class="auth-button">
+                        <a href="">Войти</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -28,6 +38,9 @@
             <div class="mainblock-head">
                 <div class="mainblock-name">
                     <h1>Заглавная Страница</h1>
+                    <div class="edit-button">
+                        <img src="images/pencil.png" alt="edit-button" class="edit-button-img">
+                    </div>
                 </div>
                 <div class="mainblock-buttons">
                     <a class="mainblock-buttonleft" href="">Заглавная</a>
