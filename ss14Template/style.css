@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-html, body{
+html, body {
     margin: 0;
     height: 1400px;
     width: 100%;
@@ -9,16 +9,16 @@ html, body{
     position: relative;
     font-family: 'Segoe UI','Segoe UI Emoji','Segoe UI Symbol','Lato','Liberation Sans','Noto Sans','Helvetica Neue','Helvetica',sans-serif
 }
-hr{
+hr {
     margin: 0;
     position: relative;
     top: -1%;
 }
-img{
+img {
     image-rendering: pixelated;
 }
 
-.header{
+.header {
     z-index: 2;
     background-color: rgb(34, 33, 37);
     width: 100%;
@@ -27,12 +27,12 @@ img{
     top: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-.header-line{
+.header-line {
     height: 100%;
     display: flex;
     position: relative;
 }
-.logo-text{
+.logo-text {
     width: 20%;
     height: 100%;
     text-align: center;
@@ -40,7 +40,7 @@ img{
     position: relative;
     border-bottom: 5px solid rgb(170, 4, 4);
 }
-.logo-text a{
+.logo-text a {
     font-size: 1.4em;
     text-decoration: none;
     font-family: 'Linux Libertine', 'Times New Roman', 'Liberation Serif', 'Nimbus Roman', 'Noto Serif', 'Times', serif;
@@ -62,16 +62,16 @@ img{
     top: 15%;
     text-align: center;
 }
-.logo-text a:hover{
+.logo-text a:hover {
    text-decoration: underline;
 }
-.search{
+.search {
     height: 100%;
     width: 60%;
     position: relative;
     border-bottom: 5px solid rgb(65, 50, 197);
 }
-.search input{
+.search input {
     width: 100%;
     height: 80%;
     position: absolute;
@@ -83,14 +83,14 @@ img{
     padding: 0.4em 4.5em 0.2em 2em;
     border: 1px solid rgb(78, 78, 78);
 }
-.auth{
+.auth {
     width: 20%;
     height: 100%;
     border-bottom: 5px solid rgb(65, 161, 109);
     position: relative;
     cursor: pointer;
 }
-.auth span{
+.auth span {
     color: #eee;
     text-decoration: none;
     position: relative;
@@ -98,7 +98,7 @@ img{
     left: 20%;
     font-size: 1.5em;
 }
-.auth a:hover{
+.auth a:hover {
     text-decoration: underline;
 }
 .auth-window {
@@ -135,12 +135,12 @@ img{
     color: white;
 }
 
-.main{
+.main {
     flex: 1 0 auto;
     display: flex;
     justify-content: center;
 }   
-.mainblock{
+.mainblock {
     background: #212126;
     width: 65%;
     height: auto;
@@ -151,7 +151,7 @@ img{
 .mainblock-name {
     display: flex;
 }
-.mainblock-name h1{
+.mainblock-name h1 {
     margin-top: 10px;
     margin-left: 5px;
     padding-bottom: 15px;
@@ -169,7 +169,7 @@ img{
     width: 2.25em;
     padding: 0.4em;
 } 
-.edit-button-img:hover{ 
+.edit-button-img:hover { 
     border: solid 1px white;
     border-radius: 10px;
     cursor: pointer;
@@ -178,41 +178,41 @@ img{
     border: solid 1px white;
     border-radius: 10px;
 }
-.edit-button{
+.edit-button {
     position: absolute;
     left: 95%;
 }
-.mainblock-buttons{
+.mainblock-buttons {
     font-size: 1.25em;
     width: 100%;
     height: 2em;
     margin: 0;
 }
-.mainblock-buttons a{
+.mainblock-buttons a {
     color: #007FFF;
     font-size: 0.75em;
 }
-.mainblock-buttons a:hover{
+.mainblock-buttons a:hover {
     border-bottom: solid 3px whitesmoke;
     color: whitesmoke;
 }
-.mainblock-buttonleft{
+.mainblock-buttonleft {
     float: left;
     margin: 10px;
     text-decoration: none;
 }
-.mainblock-buttonright{
+.mainblock-buttonright {
     float: right;
     margin: 10px;
     text-decoration: none;
 }
-.logo{
+.logo {
     text-align: center;
     width: 100%;
     overflow: hidden;
     margin-top: 10px;
 }
-.mainblock-info{
+.mainblock-info {
     width: 45%;
     float: right;
     margin: 10px;
@@ -220,20 +220,20 @@ img{
     height: 40%;
     color: #ddd;
 }
-.about-ON{
+.about-ON {
     cursor: pointer;
     background-color: #37373e;
     border-radius: 10px;
 }
-.help-ON{
+.help-ON {
     cursor: pointer;
     background-color: #37373e;
     border-radius: 10px;
 }
-.community img{
+.community img {
     margin-bottom: 10px;
 }
-.mainblock-links{
+.mainblock-links {
     width: 45%;
     margin: 10px;   
     text-align: center;
@@ -241,7 +241,7 @@ img{
     font-family: Oswald;
     text-shadow: 3px 3px 0px black, 5px 5px 0px darkred;
 }
-.mainblock-links a{
+.mainblock-links a {
     text-decoration: none;
     color: #007FFF;
     font-weight: 100;
@@ -249,12 +249,12 @@ img{
     font-variant: small-caps;
     line-height: 1.3em;
 }
-.mainblock-links a:hover{
+.mainblock-links a:hover {
     border-bottom: 3px solid white;
     box-shadow: 0px 3px 0px black, 0px 5px 0px darkred;
     color: white;
 }
-.manuals-button{
+.manuals-button {
     width: 100%;
     text-align: center;
     font-family: Oswald;
@@ -265,7 +265,7 @@ img{
     position: relative;
     top: -1.5%;
 }
-.manuals-button a{
+.manuals-button a {
     color: #007FFF;
     text-decoration: none;
     font-weight: 100;
@@ -273,12 +273,12 @@ img{
     font-variant: small-caps;
     overflow: hidden;
 }
-.manuals-button a:hover{
+.manuals-button a:hover {
     border-bottom: 3px solid white;
     box-shadow: 0px 3px 0px black, 0px 5px 0px darkred;
     color: white;
 }
-.manuals{
+.manuals {
     font-family: Oswald;
     text-shadow: 3px 3px 0px black, 5px 5px 0px darkred;
     font-variant: small-caps;
@@ -290,48 +290,48 @@ img{
     column-gap: 5em; 
     width: 100%;
 }
-.manuals a{
+.manuals a {
     font-size: 2.5em;
     color: #007FFF;
     text-decoration: none;
     text-align: center;
     display: inline-block;
 }
-.manuals a:hover{
+.manuals a:hover {
     border-bottom: 3px solid white;
     box-shadow: 0px 3px 0px black, 0px 5px 0px darkred;
     color: white;
     height: 1.4em;
 }
-.manuals a:last-child{
+.manuals a:last-child {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
-.manuals a:last-child:hover{
+.manuals a:last-child:hover {
     height: 1.1em;
 }
 
-.leftmenu{
+.leftmenu {
     z-index: 1;
     position: absolute;
     margin: 5em;
     margin-left: 5em;
     width: 12%;
 }
-.leftmenu-logoimg img{
+.leftmenu-logoimg img {
     height: 135px;
     width: auto;
     display: block;
     margin: 0 auto;
 }
-.lm-abouttext{
+.lm-abouttext {
     border-bottom: 2px solid #ddd;
     margin: 0;
     margin-bottom: 1.45em;
     color: #ddd;
     width: 100%;
 }
-.lm-links{
+.lm-links {
     margin: 1em;    
     padding: 2em;
     padding-top: 1em;
@@ -339,21 +339,21 @@ img{
     background: #212126;
     font-size: 0.9em;
 }
-.lm-links:last-child{
+.lm-links:last-child {
     padding-bottom: 2em;
 }
-.lm-links a{
+.lm-links a {
     color: #007FFF;
     text-decoration: none;
     display: block;
     margin: -0.65em;
     margin-left: 0;
 }
-.lm-links a:hover{
+.lm-links a:hover {
     text-decoration: underline;
     color: white;
 }
-.right-menu{
+.right-menu {
     background: #212126;
     position: absolute;
     z-index: 1;
@@ -365,18 +365,18 @@ img{
     font-size: 0.9em;
     padding: 1em;
 }
-.right-menu a{
+.right-menu a {
     color: #007FFF;
     text-decoration: none;
     display: block;
     margin: -0.65em;
     margin-left: 0.6em;
 }
-.right-menu a:hover{
+.right-menu a:hover {
     color: white;
     text-decoration: underline;
 }
-.rm-more{
+.rm-more {
     width: 90%;
     border-bottom: 2px solid #ddd;
     margin: 0.5em;
@@ -384,32 +384,32 @@ img{
     color: #ddd;
 }
 
-.footer{
+.footer {
     border-top: 1px solid white;
     width: 100%;
     position: relative;
     flex-shrink: 0;
 }
-.footer-line{
+.footer-line {
     color: #ddd;
     font-size: 1em;
     margin: 1em 5em;
 }
-.footer-line a{
+.footer-line a {
     text-decoration: none;
     color: lightblue;
 }
-.footer-line a:hover{
+.footer-line a:hover {
     text-decoration: underline;
 }
-.links a{
+.links a {
     padding-right: 1em
 }
-.rightimg-links{
+.rightimg-links {
     position: absolute;
     left: 85%;
     top: 10%;
 }
-.rightimg-links img{
+.rightimg-links img {
     margin-right: 1em;
 }
