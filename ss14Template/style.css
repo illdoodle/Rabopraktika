@@ -223,6 +223,12 @@ img {
     height: 40%;
     color: #ddd;
 }
+.about {
+    padding-left: 10px;
+}
+.help{
+    padding-left: 10px;
+}
 .about-ON {
     cursor: pointer;
     background-color: #37373e;
@@ -232,6 +238,9 @@ img {
     cursor: pointer;
     background-color: #37373e;
     border-radius: 10px;
+}
+.community {
+    padding-left: 10px;
 }
 .community img {
     margin-bottom: 10px;

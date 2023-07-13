@@ -15,15 +15,20 @@ addEventListener('DOMContentLoaded', function(){
         help.classList.toggle('help-ON');
         console.log(about.hasAttribute('contenteditable'));
     });
-    about.innerHTML = localStorage.getItem('currentAbout');
+    // localStorage.setItem('currentAbout', about.innerHTML);
+    // localStorage.setItem('currentHelp', help.innerHTML);
+
+
     about.oninput = function() {
         localStorage.setItem('currentAbout', about.innerHTML);
         console.log('saved');
     }
+    about.innerHTML = localStorage.getItem('currentAbout');
+    
 
-    help.innerHTML = localStorage.getItem('currentHelp');
     help.oninput = function() {
         localStorage.setItem('currentHelp', help.innerHTML);
         console.log('saved');
     }
+    help.innerHTML = localStorage.getItem('currentHelp');
 })

@@ -1,0 +1,144 @@
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #25252A;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Segoe UI','Segoe UI Emoji','Segoe UI Symbol','Lato','Liberation Sans','Noto Sans','Helvetica Neue','Helvetica', sans-serif;
+    color: white;
+}
+p {
+    margin: 0;
+}
+h1 {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+h2 {
+    margin-top: 0;
+    font-weight: 500;
+}
+.header a {
+    margin-left: 30px; 
+    font-size: 1.4em;
+    text-decoration: none;
+    color: white;
+}
+.header a:hover {
+    color: lightgrey;
+}
+
+.header {
+    width: 100%;
+}
+.header-line {
+    height: 75px;
+    width: 100%;
+    background-color: #212126;
+    border-bottom: 2px solid #ADA24B;
+    display: flex;
+    position: relative;
+}
+.header-logo{ 
+    width: auto;
+    height: auto;
+    margin-left: 20%;
+    margin-top: 10px;
+    /* position: absolute; */
+}
+.header-logo img{ 
+    width: 250px;
+    height: 50px;
+}
+.auth-links{
+    position: absolute;
+    left: 70%;
+    margin-top: 20px;
+}
+.main-link{
+    margin-top: 20px;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.auth-window {
+    position: absolute;
+    left: 20%;
+    padding: 5px;
+    width: 20%;
+    height: auto;
+    /* background-color: blue; */
+}
+.login {
+    line-height: 35px;
+}
+.input-text {
+    padding: 5px;
+    width: 80%;
+    height: 35px;
+    border-radius: 5px;
+    border-color: #383845;
+}
+.confirm {
+    margin-top: 10px;
+}
+.confirm input {
+    border-radius: 0.25rem;
+    border: 1px solid transparent;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+    color: #fff;
+    font-size: 1rem;
+    padding: 10px;
+}
+.links{
+    margin-top: 25px;
+}
+.links a{ 
+    color: #5e92d0;
+    margin: 0;
+    margin-bottom: 20px;
+    display: block;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.links a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.footer {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../images/stripeback.svg);
+}
+.footer-line {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    border-top: 2px solid #525252;
+}
+.footer-line-text {
+    width: fit-content;
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 25%;
+}
+.footer-line-text a {
+    color: #5e92d0;
+    text-decoration: none;
+}
+.footer-line-text a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.footer-line-text span {
+    color: #6c757d;
+}
