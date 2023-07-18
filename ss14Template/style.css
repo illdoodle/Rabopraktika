@@ -154,7 +154,7 @@ img {
 .mainblock-name h1 {
     margin-top: 10px;
     margin-left: 5px;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     margin-bottom: 10px;
     border-bottom: solid 4px #3366cc;
     height: 0.75em;
@@ -169,18 +169,27 @@ img {
     width: 2.25em;
     padding: 0.4em;
 } 
+.edit-button {
+    position: absolute;
+    left: 95%;
+}
 .edit-button-img:hover { 
     border: solid 1px white;
     border-radius: 10px;
     cursor: pointer;
 } 
-.edit-button-img-ON {
+.buttons-change {
     border: solid 1px white;
     border-radius: 10px;
 }
-.edit-button {
+.reset-editting {
     position: absolute;
-    left: 95%;
+    left: 90%;
+}
+.reset-editting-img:hover {
+    border: solid 1px white;
+    border-radius: 10px;
+    cursor: pointer;
 }
 .mainblock-buttons {
     font-size: 1.25em;
@@ -220,6 +229,7 @@ img {
     float: right;
     margin: 10px;
     margin-bottom: 0px;
+    margin-top: 0;
     height: 40%;
     color: #ddd;
 }
@@ -229,15 +239,11 @@ img {
 .help{
     padding-left: 10px;
 }
-.about-ON {
+.changing {
     cursor: pointer;
     background-color: #37373e;
     border-radius: 10px;
-}
-.help-ON {
-    cursor: pointer;
-    background-color: #37373e;
-    border-radius: 10px;
+    padding: 10px;
 }
 .community {
     padding-left: 10px;

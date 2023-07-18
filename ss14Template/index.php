@@ -1,3 +1,6 @@
+<?php 
+// echo getcwd();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,10 +18,10 @@
             <div class="logo-text">
                 <a href="" name="mainpage">Space Station 14 <br> RU Wiki</a>
             </div>
-            <div class="search" title="Искать в Space Station 14 RU Wiki">
+            <div class="search">
                 <input type="text" name="search" id="main-search" placeholder="Искать в Space Station 14 RU Wiki">
             </div>
-            <div class="auth" title="Аккаунт">
+            <div class="auth">
                 <span href="" id="user-mainpage-name">Аноним</span>
             </div>
             <div class="auth-window" hidden>
@@ -41,9 +44,6 @@
                     <div class="edit-button">
                         <img src="images/pencil.png" alt="edit-button" class="edit-button-img">
                     </div>
-                    <div class="reset-editting">
-                        <img src="images/reset.png" alt="reset-button" class="reset-editting-img">
-                    </div>
                 </div>
                 <div class="mainblock-buttons">
                     <a class="mainblock-buttonleft" href="">Заглавная</a>
@@ -58,8 +58,8 @@
             <div class="middle-info">
                 <div class="mainblock-info">
                     <div class="about">
-                        <h2 class="about-h2">О Space Station 14</h2>
-                        <p class="about-p">Space Station 14 вдохновлена культовой классикой <a href="https://spacestation13.com/">Space Station 13</a> и рассказывает историю о том, как обычная смена на космической станции пошла наперекосяк. Погрузитесь в свою роль, возитесь с проработанными системами и выживайте в хаосе в этой многопользовательской ролевой игре.</p>
+                        <h2>О Space Station 14</h2>
+                        <p>Space Station 14 вдохновлена культовой классикой <a href="https://spacestation13.com/">Space Station 13</a> и рассказывает историю о том, как обычная смена на космической станции пошла наперекосяк. Погрузитесь в свою роль, возитесь с проработанными системами и выживайте в хаосе в этой многопользовательской ролевой игре.</p>
                     </div>
                     <div class="community">
                         <h2>Сообщество</h2>
@@ -67,8 +67,8 @@
                         <a href="https://vk.com/ss14ru"><img src="images/vkontakte-community-link.png" alt=""></a>
                     </div>
                     <div class="help">
-                        <h2 class="help-h2">Помогите! Я не могу найти руководство по X!</h2>
-                        <p class="help-p">Скорее всего, его еще не существует! Вики SS14, как и большинство вики, открыта для редактирования любым желающим. Для помощи и лучшей координации обратитесь в наш <a href="https://discord.gg/corvax">Discord</a>, там имеется отдельный канал для редакторов Вики.</p>
+                        <h2>Помогите! Я не могу найти руководство по X!</h2>
+                        <p>Скорее всего, его еще не существует! Вики SS14, как и большинство вики, открыта для редактирования любым желающим. Для помощи и лучшей координации обратитесь в наш <a href="https://discord.gg/corvax">Discord</a>, там имеется отдельный канал для редакторов Вики.</p>
                     </div>
                 </div>
                 <div class="mainblock-links">
