@@ -5,7 +5,7 @@ addEventListener('DOMContentLoaded', function(){
     }); 
 
     let editButton = document.getElementsByClassName('edit-button-img')[0];
-    let resetButton = document.getElementsByClassName('reset-editting-img')[0];
+    let resetButton = document.getElementsByClassName('reset-editing-img')[0];
 
     let aboutH = document.getElementsByClassName('about-h2');
     let aboutP = document.getElementsByClassName('about-p');
@@ -15,6 +15,10 @@ addEventListener('DOMContentLoaded', function(){
     editButton.addEventListener('click', function(){
         editButton.classList.toggle('buttons-change');
 
+        //todo Если ты не планируешь использовать где либо элементы отличные от [0]
+        // то лучше в месте объявления переменной сразу получить нужный элемент
+        // либо назвать переменную aboutHList, aboutHArray e.t.c
+        // P.S Это касается не только этой переменной, а всех что найдешь
         aboutH[0].toggleAttribute('contenteditable');
         aboutH[0].classList.toggle('changing');
         aboutP[0].toggleAttribute('contenteditable');
@@ -26,8 +30,14 @@ addEventListener('DOMContentLoaded', function(){
         helpP[0].classList.toggle('changing');
     });
 
+    //todo выбивает ошибку
     resetButton.addEventListener('click', function(){
+        //todo У тебя эти данные есть в БД. Один из главных принципов программирования
+        // не допускать разделения источников одинаковой информации.
         localStorage.setItem('currentAbout-H', 'О Space Station 14');
+        //todo <a href="https://spacestation13.com/"> - не рекомендуется засовывать теги в строку, лучше не выходить за рамки текста
+        // если тебе нужно вставить тег, лучше создай его зараннее и вставляй в него текст отдельно
+        // т.к при разрастании проекта может быть неочевидно откуда берётся тот или иной тег на странице
         localStorage.setItem('currentAbout-P', 'Space Station 14 вдохновлена культовой классикой <a href="https://spacestation13.com/">Space Station 13</a> и рассказывает историю о том, как обычная смена на космической станции пошла наперекосяк. Погрузитесь в свою роль, возитесь с проработанными системами и выживайте в хаосе в этой многопользовательской ролевой игре.');
         localStorage.setItem('currentHelp-H', 'Помогите! Я не могу найти руководство по X!');
         localStorage.setItem('currentHelp-P', 'Скорее всего, его еще не существует! Вики SS14, как и большинство вики, открыта для редактирования любым желающим. Для помощи и лучшей координации обратитесь в наш <a href="https://discord.gg/corvax">Discord</a>, там имеется отдельный канал для редакторов Вики.');

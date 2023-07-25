@@ -101,6 +101,7 @@ img {
 .auth a:hover {
     text-decoration: underline;
 }
+/*todo background-color duplicate*/
 .auth-window {
     background-color: white;
     position: absolute;
@@ -392,6 +393,17 @@ img {
     color: white;
     text-decoration: underline;
 }
+/*
+    todo можно сократить margin: 0.5em 0.5em 1em;
+    почитай про margin и padding https://developer.mozilla.org/ru/docs/Web/CSS/margin
+    у них есть разные способы задания параметров
+    Вариант:
+        margin: 0.5em;
+        margin-bottom: 1em;
+    Является дублирующей инструкцией. Сначала бразуер установит margin: 0.5em;
+    а потом ещё раз выполнить ту же инструкцию но для margin-bottom: 1em;
+    Пробегись по css файлу и поудаляй такие места
+*/
 .rm-more {
     width: 90%;
     border-bottom: 2px solid #ddd;

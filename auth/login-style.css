@@ -91,7 +91,7 @@ h2 {
     border-radius: 0.25rem;
     border: 1px solid transparent;
     background-color: #1b6ec2;
-    border-color: #1861ac;
+    border-color: #1861ac; /*todo border-color можно указать в border https://developer.mozilla.org/ru/docs/Web/CSS/border*/
     color: #fff;
     font-size: 1rem;
     padding: 10px;

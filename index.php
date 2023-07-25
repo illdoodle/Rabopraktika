@@ -1,5 +1,5 @@
 <?php 
-require_once 'config/connect.php';
+require_once 'config/connect.php'; //todo зачем это здесь?
 ?>
 <!DOCTYPE html>
 <html lang="en">
