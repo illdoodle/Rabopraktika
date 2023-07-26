@@ -1,5 +1,5 @@
 <?php 
-require_once 'config/connect.php'; //todo зачем это здесь?
+include 'services.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,8 +61,17 @@ require_once 'config/connect.php'; //todo зачем это здесь?
             <div class="middle-info">
                 <div class="mainblock-info">
                     <div class="about">
-                        <h2 class="about-h2">О Space Station 14</h2>
-                        <p class="about-p">Space Station 14 вдохновлена культовой классикой <a href="https://spacestation13.com/">Space Station 13</a> и рассказывает историю о том, как обычная смена на космической станции пошла наперекосяк. Погрузитесь в свою роль, возитесь с проработанными системами и выживайте в хаосе в этой многопользовательской ролевой игре.</p>
+                        <!-- <h2 class="about-h2">О Space Station 14</h2> -->
+                        <h2 class="about-h2">
+                            <?php 
+                                GetInnerByName('about-title', $texts);
+                            ?>
+                        </h2>
+                        <p class="about-p">
+                            <?php 
+                                GetInnerByName('about-text', $texts);
+                            ?>
+                        </p>
                     </div>
                     <div class="community">
                         <h2>Сообщество</h2>
@@ -70,8 +79,16 @@ require_once 'config/connect.php'; //todo зачем это здесь?
                         <a href="https://vk.com/ss14ru"><img src="images/vkontakte-community-link.png" alt=""></a>
                     </div>
                     <div class="help">
-                        <h2 class="help-h2">Помогите! Я не могу найти руководство по X!</h2>
-                        <p class="help-p">Скорее всего, его еще не существует! Вики SS14, как и большинство вики, открыта для редактирования любым желающим. Для помощи и лучшей координации обратитесь в наш <a href="https://discord.gg/corvax">Discord</a>, там имеется отдельный канал для редакторов Вики.</p>
+                        <h2 class="help-h2">
+                            <?php 
+                                GetInnerByName('help-title', $texts);
+                            ?>
+                        </h2>
+                        <p class="help-p">
+                            <?php 
+                                GetInnerByName('help-text', $texts);
+                            ?>
+                        </p>
                     </div>
                 </div>
                 <div class="mainblock-links">
