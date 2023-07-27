@@ -1,5 +1,5 @@
 <?php 
-include '../config/connect.php';
+require_once '../config/connect.php';
 
 if ($connect->connect_error) {
     die("Ошибка подключения: " . $connect->connect_error);
