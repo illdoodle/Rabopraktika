@@ -1,5 +1,6 @@
 <?php 
 include 'services.php';
+// include 'migrations/migration.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -61,7 +62,6 @@ include 'services.php';
             <div class="middle-info">
                 <div class="mainblock-info">
                     <div class="about">
-                        <!-- <h2 class="about-h2">О Space Station 14</h2> -->
                         <h2 class="about-h2">
                             <?php 
                                 GetInnerByName('about-title', $texts);
