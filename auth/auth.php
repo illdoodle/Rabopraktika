@@ -1,10 +1,10 @@
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In - SS14 Auth</title>
     <script src=""></script>
-    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="auth-style.css">
     <link rel="shortcut icon" href="../images/icon.png">
 </head>
 <body>
@@ -16,10 +16,6 @@
             <div class="main-link">
                 <a href="https://spacestation14.io/">Main Website</a>
             </div>
-            <!-- <div class="auth-links">
-                <a href="registration.html">Register</a>
-                <a href="login.html">Login</a>
-            </div> -->
         </div>
     </div>
     <div class="main">
@@ -29,28 +25,21 @@
                 <h2>Use your Space Station 14 <br> account to log in.</h2>
             </div>
             <div class="login">
-                <div class="login-input">
-                    <p>Email Or Username</p>
-                    <input type="text" class="input-text">
-                </div>
-                <div class="pw-input">
-                    <p>Password</p>
-                    <input type="password" class="input-text"> 
-                </div>
-                <div class="data-remember">
-                    <input type="checkbox"> 
-                    <span>Remember Me?</span>
-                </div>
-                <div class="confirm">
-                    <input type="button" value="Log In">
-                    <input type="button" value="Register">
-                </div>
+                <form action="do_registration.php" method="post">
+                    <div class="login-input">
+                        <p>Email Or Username</p>
+                        <input type="text" class="input-text" id="username" name="username" required>
+                    </div>
+                    <div class="pw-input">
+                        <p>Password</p>
+                        <input type="password" class="input-text" id="password" name="password" required> 
+                    </div>
+                    <div class="confirm">
+                        <input style="cursor: pointer;" type="submit" value="Log In">
+                        <input style="cursor: pointer;" type="submit" value="Register">
+                    </div>
+                </form>
             </div>
-            <!-- <div class="links">
-                <a href="">Forgot your password?</a>
-                <a href="">Register as a new user</a>
-                <a href="">Resend email confirmation</a>
-            </div> -->
         </div>
     </div>
 
@@ -70,3 +59,4 @@
         </div>
     </div>
 </body>
+</html>

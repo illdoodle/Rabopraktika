@@ -1,6 +1,5 @@
 <?php 
 include 'services.php';
-// include 'migrations/migration.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

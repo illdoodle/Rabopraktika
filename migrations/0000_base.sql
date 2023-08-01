@@ -8,6 +8,14 @@ CREATE TABLE IF NOT EXISTS `texts` (
     `text` text NOT NULL,
     PRIMARY KEY (`id`)
 );
+
+CREATE TABLE IF NOT EXISTS `users` (
+    `id` int unsigned NOT NULL AUTO_INCREMENT,
+    `username` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+    `password` varchar(255) COLLATE utf8mb4_general_ci NOT NULL,
+    PRIMARY KEY (`id`),
+    UNIQUE KEY `username` (`username`)
+);
  
 INSERT IGNORE INTO `texts` (`id`,`name`, `text`) VALUES
     ('1','about-title', 'О Space Station 14'),
