@@ -25,7 +25,7 @@
                 <h2>Use your Space Station 14 <br> account to log in.</h2>
             </div>
             <div class="login">
-                <form action="do_registration.php" method="post">
+                <form action="do_login.php" method="post">
                     <div class="login-input">
                         <p>Email Or Username</p>
                         <input type="text" class="input-text" id="username" name="username" required>

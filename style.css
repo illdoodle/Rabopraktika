@@ -101,7 +101,7 @@ img {
 }
 .auth-window {
     position: absolute;
-    height: 125px;
+    /* height: 125px; */
     width: 8%;
     font-family: 'Segoe UI','Segoe UI Emoji','Segoe UI Symbol','Lato','Liberation Sans','Noto Sans','Helvetica Neue','Helvetica',sans-serif;
     background: #27272e;
@@ -110,7 +110,6 @@ img {
     top: 100%;
 }
 .aw-container { 
-    height: 95%;
     width: 80%;
     margin: 1em;
     font-size: 0.85em;

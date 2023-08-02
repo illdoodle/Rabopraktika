@@ -1,5 +1,6 @@
 <?php 
 include 'services.php';
+session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,15 +23,43 @@ include 'services.php';
                 <input type="text" name="search" id="main-search" placeholder="Искать в Space Station 14 RU Wiki">
             </div>
             <div class="auth" title="Аккаунт">
-                <span href="" id="user-mainpage-name">Аноним</span>
+                <span href="" id="user-mainpage-name">
+                    <?php 
+                    if(isset($_SESSION['username'])){
+                        echo $_SESSION['username'];
+                    }else{
+                        echo 'Аноним';
+                    }
+                    ?>
+                </span>
             </div>
             <div class="auth-window" hidden>
                 <div class="aw-container">
                     <div class="aw-text">
-                        <span>Вы не представились системе</span>
+                        <span>
+                            <?php 
+                            if(isset($_SESSION['username'])){
+                                echo 'Вы авторизованы!';
+                            }else{
+                                echo 'Вы не представились системе!';
+                            }
+                            ?>
+                        </span>
                     </div>
                     <div class="auth-button">
-                        <a href="auth/login.html">Войти</a>
+                            <?php 
+                            if(isset($_SESSION['username'])){
+                                $_SESSION['username'] = NULL;
+                                ?>
+                                <a href="">Выйти</a>
+                                <?php
+                            }else{
+                                ?>
+                                <a href="auth/auth.php">Войти</a>
+                                <?php
+                            }
+                            ?>
+                        
                     </div>
                 </div>
             </div>
