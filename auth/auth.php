@@ -25,7 +25,7 @@
                 <h2>Use your Space Station 14 <br> account to log in.</h2>
             </div>
             <div class="login">
-                <form action="do_login.php" method="post">
+                <form method="post" id="authForm">
                     <div class="login-input">
                         <p>Email Or Username</p>
                         <input type="text" class="input-text" id="username" name="username" required>
@@ -35,9 +35,19 @@
                         <input type="password" class="input-text" id="password" name="password" required> 
                     </div>
                     <div class="confirm">
-                        <input style="cursor: pointer;" type="submit" value="Log In">
-                        <input style="cursor: pointer;" type="submit" value="Register">
+                        <input style="cursor: pointer;" type="submit" value="Log In" onclick="setAction('login')">
+                        <input style="cursor: pointer;" type="submit" value="Register" onclick="setAction('registration')">
                     </div>
+                    <script>
+                         function setAction(actionType) {
+                            let form = document.getElementById('authForm');
+                            if(actionType === 'login') {
+                                form.action = 'do_login.php'; 
+                            }else if(actionType === 'registration') {
+                                form.action = 'do_registration.php'; 
+                            }
+                        }
+                    </script>
                 </form>
             </div>
         </div>
