@@ -1,12 +1,7 @@
 <?php 
 require_once '../config/connect.php';
 
-if ($connect->connect_error) {
-    die("Ошибка подключения: " . $connect->connect_error);
-}
-
 $sql = file_get_contents('0000_base.sql');
-$queries = explode(";", $sql);
 $queries = explode(";", $sql);
 
 // Выполняем каждый запрос

@@ -37,28 +37,5 @@ addEventListener('DOMContentLoaded', function(){
         helpH.innerHTML = localStorage.getItem('currentHelp-H');
         helpP.innerHTML = localStorage.getItem('currentHelp-P');
     });
-
-    //Временно отключил в угоду получения данных из БД.
-    
-    // aboutH.oninput = function() {
-    //     localStorage.setItem('currentAbout-H', aboutH.innerHTML);
-    //     console.log('saved');
-    // }
-    // aboutH[0].innerHTML = localStorage.getItem('currentAbout-H');
-    // aboutP[0].oninput = function() {
-    //     localStorage.setItem('currentAbout-P', aboutP[0].innerHTML);
-    //     console.log('saved');
-    // }
-    // aboutP[0].innerHTML = localStorage.getItem('currentAbout-P');
-    
-    // helpH[0].oninput = function() {
-    //     localStorage.setItem('currentHelp-H', helpH[0].innerHTML);
-    //     console.log('saved');
-    // }
-    // helpH[0].innerHTML = localStorage.getItem('currentHelp-H');
-    // helpP[0].oninput = function() {
-    //     localStorage.setItem('currentHelp-P', helpP[0].innerHTML);
-    //     console.log('saved');
-    // }
-    // helpP[0].innerHTML = localStorage.getItem('currentHelp-P');
+  
 })

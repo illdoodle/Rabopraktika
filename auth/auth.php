@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In - SS14 Auth</title>
-    <script src=""></script>
+    <script src="auth.js"></script>
     <link rel="stylesheet" href="auth-style.css">
     <link rel="shortcut icon" href="../images/icon.png">
 </head>
@@ -38,16 +38,6 @@
                         <input style="cursor: pointer;" type="submit" value="Log In" onclick="setAction('login')">
                         <input style="cursor: pointer;" type="submit" value="Register" onclick="setAction('registration')">
                     </div>
-                    <script>
-                         function setAction(actionType) {
-                            let form = document.getElementById('authForm');
-                            if(actionType === 'login') {
-                                form.action = 'do_login.php'; 
-                            }else if(actionType === 'registration') {
-                                form.action = 'do_registration.php'; 
-                            }
-                        }
-                    </script>
                 </form>
             </div>
         </div>
