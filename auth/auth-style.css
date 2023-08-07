@@ -20,6 +20,7 @@ h2 {
     margin-top: 0;
     font-weight: 500;
 }
+
 .header a {
     margin-left: 30px; 
     font-size: 1.4em;
@@ -46,7 +47,7 @@ h2 {
     height: auto;
     margin-left: 20%;
     margin-top: 10px;
-    /* position: absolute; */
+    margin: 10px 0 0 20%;
 }
 .header-logo img{ 
     width: 250px;
@@ -91,7 +92,7 @@ h2 {
     border-radius: 0.25rem;
     border: 1px solid transparent;
     background-color: #1b6ec2;
-    border-color: #1861ac;
+    border: #1861ac;
     color: #fff;
     font-size: 1rem;
     padding: 10px;
@@ -102,8 +103,7 @@ h2 {
 }
 .links a{ 
     color: #5e92d0;
-    margin: 0;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     display: block;
     font-size: 1rem;
     text-decoration: none;
