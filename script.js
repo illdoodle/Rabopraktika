@@ -2,6 +2,7 @@ addEventListener('DOMContentLoaded', function(){
     document.getElementById('user-mainpage-name').addEventListener('click', function(){
         let authWindow = document.getElementsByClassName('auth-window');
         authWindow[0].toggleAttribute('hidden');
+        console.log(123);
     }); 
 
     let editButton = document.getElementsByClassName('edit-button-img')[0];

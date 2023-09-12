@@ -35,6 +35,7 @@
                         <input type="password" class="input-text" id="password" name="password" required> 
                     </div>
                     <div class="confirm">
+                        <!-- formaction -->
                         <input style="cursor: pointer;" type="submit" value="Log In" onclick="setAction('login')">
                         <input style="cursor: pointer;" type="submit" value="Register" onclick="setAction('registration')">
                     </div>

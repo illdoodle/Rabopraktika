@@ -1,6 +1,7 @@
 <?php 
 include 'services.php';
 session_start();
+// Откуда вообще берутся эти стили? Наверное стоило делать через define(BASE_URL, бла-бла-бла)
 ?>
 <!DOCTYPE html>
 <html lang="en">
